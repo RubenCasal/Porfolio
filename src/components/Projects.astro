@@ -3,7 +3,25 @@ import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
+import Pytorch from "./icons/Pytorch.astro"
+import Langchain from "./icons/Langchain.astro"
+import OpenAi from "./icons/Openai.astro"
+import Ollama from "./icons/Ollama.astro"
+import Streamlit from "./icons/Streamlit.astro"
+import Docker from "./icons/Docker.astro"
+import FastApi from "./icons/FastApi.astro"
+import React from "./icons/React.astro"
+import Python from "./icons/Python.astro"
+import Typescript from "./icons/Typescript.astro"
+import Jupyter from "./icons/Jupyter.astro"
+import OpenCV from "./icons/OpenCV.astro"
+import Pandas from "./icons/Pandas.astro"
+import Pinecone from "./icons/Pinecone.astro"
+import Darts from "./icons/Darts.astro"
+import Gymnasium from "./icons/Gymnasium.astro"
 import LinkButton from "./LinkButton.astro"
+
+
 
 const TAGS = {
   NEXT: {
@@ -16,78 +34,192 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  PYTORCH: {
+    name: "PyTorch",
+    class: "bg-[#204A87] text-white",
+    icon: Pytorch,
+  },
+  LANGCHAIN: {
+    name: "Langchain",
+    class: "bg-[#204A87] text-white",
+    icon: Langchain,
+  },
+  OpenAi: {
+    name: "OpenAI",
+    class: "bg-[#204A87] text-white",
+    icon: OpenAi,
+  },
+  Ollama: {
+    name: "Ollama",
+    class: "bg-[#204A87] text-white",
+    icon: Ollama,
+  },
+  Streamlit: {
+    name: "Streamlit",
+    class: "bg-[#204A87] text-white",
+    icon: Streamlit,
+  },
+  Docker: {
+    name: "Docker",
+    class: "bg-[#204A87] text-white",
+    icon: Docker,
+  },
+  FastApi: {
+    name: "FastApi",
+    class: "bg-[#204A87] text-white",
+    icon: FastApi,
+  },
+  React: {
+    name: "React",
+    class: "bg-[#204A87] text-white",
+    icon: React,
+  },
+  Python: {
+    name: "Python",
+    class: "bg-[#204A87] text-white",
+    icon: Python,
+  },
+  Typescript: {
+    name: "Typescript",
+    class: "bg-[#204A87] text-white",
+    icon: Typescript,
+  },
+  Jupyter: {
+    name: "Jupyter",
+    class: "bg-[#204A87] text-white",
+    icon: Jupyter,
+  },
+  Pandas: {
+    name: "Pandas",
+    class: "bg-[#204A87] text-white",
+    icon: Pandas,
+  },
+  OpenCV: {
+    name: "OpenCV",
+    class: "bg-[#204A87] text-white",
+    icon: OpenCV,
+  },
+  Pinecone: {
+    name: "Pinecone",
+    class: "bg-[#204A87] text-white",
+    icon: Pinecone,
+  },
+  Darts: {
+    name: "Darts",
+    class: "bg-[#204A87] text-white",
+    icon: Darts,
+  },
+  Gymnasium: {
+    name: "Gymnasium",
+    class: "bg-[#204A87] text-white",
+    icon: Gymnasium,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Data Talk (Data Assistant)",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Chatbot para simplificar el manejo de archivos CSV con lenguaje natural. Usa Llama 3.1, LangGraph y herramientas personalizadas para realizar transformaciones sin conocimientos técnicos. Incluye gráficas, manejo de valores faltantes y análisis con arquitectura en FastAPI, React y Docker.",
+    github: "https://github.com/RubenCasal/Data-Talk-Data-assistant",
+    link: "https://youtu.be/h-mtwPsuVxk",
+    image: "/projects/data_talk.png",
+    tags: [TAGS.Python,TAGS.Typescript, TAGS.LANGCHAIN, TAGS.Docker, TAGS.Ollama, TAGS.FastApi, TAGS.React],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Rainbow DQN (TFG US)",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Trabajo de Fin de Grado en la Universidad de Sevilla, evaluado con matrícula de honor. Implementa el algoritmo Rainbow DQN en Ms Pacman, integrando mejoras como Double DQN, Prioritized Replay y Noisy Networks para optimizar el rendimiento en juegos de Atari. Incluye experimentación para evaluar cada componente y desarrollar un agente robusto.",
+    github: "https://github.com/RubenCasal/Pacman_Rainbow",
+    link: "https://youtu.be/H2qEoiEt10Q",
+    image: "/projects/rainbow_dqn.png",
+    tags: [TAGS.Python, TAGS.PYTORCH, TAGS.OpenCV, TAGS.Gymnasium],
   },
+  {
+    title: "Image Segmentation (Self-Driving Videos)",
+    description:
+      "Proyecto que aplica segmentación semántica con UNET para identificar vehículos, peatones, carreteras y marcas viales en videos de conducción autónoma. Usando modelos independientes, logra segmentaciones precisas para cada una de las distintas clases.",
+    github: "https://github.com/RubenCasal/self-driving-image-segmentation",
+    link: "https://youtu.be/qO9DAAGrzR4",
+    image: "/projects/image_segmentation.png",
+    tags: [TAGS.Python, TAGS.PYTORCH, TAGS.OpenCV],
+  },
+  {
+    title: "RAG Chatbot",
+    description:
+      "Chatbot diseñado para responder preguntas sobre documentos largos, como el Google Employee Handbook. Utiliza Retrieval-Augmented Generation (RAG) con búsquedas semánticas en Pinecone y semantic chunking para dividir y procesar el texto, facilitando consultas rápidas y precisas en manuales extensos.",
+    github: "https://github.com/RubenCasal/Rag-Employee-Handbook",
+    link: "https://youtu.be/4x8MaTNYkTY",
+    image: "/projects/rag.png",
+    tags: [TAGS.Python, TAGS.Streamlit, TAGS.LANGCHAIN, TAGS.OpenAi, TAGS.Pinecone],
+  },
+  {
+    title: "OCR for Menu Cards",
+    description:
+      "Proyecto que utiliza un modelo YOLOv8 ajustado mediante fine-tuning para segmentar títulos, descripciones y precios en cartas de restaurantes. Con PaddleOCR, extrae y organiza la información en un archivo estructurado, asegurando precisión y adaptabilidad a diversos diseños.",
+    github: "https://github.com/RubenCasal/OCR_MENU_CARD",
+    image: "/projects/ocr.png",
+    tags: [TAGS.Python, TAGS.PYTORCH, TAGS.OpenCV],
+  },
+  {
+    title: "Sales Predictions (TimeSeries)",
+    description:
+      "Proyecto para predecir ventas futuras en la cadena Favorita de Ecuador, utilizando series de tiempo con la librería Darts. Incluye análisis exploratorio de datos (EDA) para identificar patrones clave antes de construir modelos específicos para cada familia de productos, considerando factores como promociones, eventos y precios del petróleo. Esto optimiza la planificación de inventarios y estrategias comerciales.",
+    github: "https://github.com/RubenCasal/Sales-Prediction-TimeSeries",
+    image: "/projects/sales_predictions.png",
+    tags: [TAGS.Python, TAGS.Jupyter, TAGS.Pandas, TAGS.Darts],
+  },
+
+
+
+
 ]
 ---
 
 <div class="flex flex-col gap-y-16">
   {
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
-    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-  <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-    </div>
-  </div>
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-5/12"> <!-- Reduced image container width -->
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img alt="Projects" class="w-full h-64 object-cover transition duration-500 hover:scale-105" src={image} />
+          </div>
+        </div>
 
-  <div class="w-full md:w-1/2 md:max-w-lg">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-      {title}
-    </h3>
-    <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
-
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
-      <footer class="flex items-end justify-start mt-4 gap-x-4">
-          {github && (
-            <LinkButton href={github}>
-              <GitHub class="size-6" />
-              Code
-              
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Preview
-            </LinkButton>
-          )}
-        </footer>
-    </div>
-  </div>
-</article>
+        <div class="w-full md:w-7/12 md:max-w-3xl"> <!-- Increased description container width -->
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2 gap-y-2"> <!-- Flex-wrap added here -->
+            <ul class="flex flex-wrap gap-x-2 gap-y-2"> <!-- Ensures wrapping of tags -->
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex items-center gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+                  >
+                    <tag.icon class="h-4 w-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+          <footer class="flex items-end justify-start mt-4 gap-x-4">
+            {github && (
+              <LinkButton href={github}>
+                <GitHub class="size-6" />
+                Code
+              </LinkButton>
+            )}
+            {link && (
+              <LinkButton href={link}>
+                <Link class="size-4" />
+                Preview
+              </LinkButton>
+            )}
+          </footer>
+        </div>
+      </article>
     ))
   }
 </div>
-
-
-
